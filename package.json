@@ -1,0 +1,23 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "watch-need-help": "echo 256 | sudo tee -a /proc/sys/fs/inotify/max_user_instances &&  echo 32768 | sudo tee -a /proc/sys/fs/inotify/max_queued_events && echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches &&  watchman shutdown-server"
+},
+  "dependencies": {
+    "expo": "^32.0.0",
+    "native-base": "^2.12.1",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-elements": "^1.1.0",
+    "react-native-paper": "^2.15.2",
+    "react-navigation": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0"
+  },
+  "private": true
+}
